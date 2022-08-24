@@ -3,7 +3,7 @@
 name: test CI
 
 env:
-  Message: "Hello"
+  Message: Hello
 
 # Controls when the workflow will run
 on:
