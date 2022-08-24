@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo $Message, Ubuntu
+        run: echo "$Message, Ubuntu"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one line script
-        run: echo $Message, windows
+        run: echo "$Message, windows"
       
       - name: Run a multi line script
         run: |
@@ -59,7 +59,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one line script
-        run: echo $Message, macOS
+        run: echo "$Message, macOS"
       
       - name: Run a multi line script
         run: |
