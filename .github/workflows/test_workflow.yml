@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo Hello, Ubuntu
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -47,4 +47,18 @@ jobs:
       - name: Run a multi line script
         run: |
           echo Add other actions to windows_build
+          echo test, and deploy your project.
+
+  macOS_build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one line script
+        run: echo Hello, macOS
+      
+      - name: Run a multi line script
+        run: |
+          echo Add other actions to macOS_build
           echo test, and deploy your project.
