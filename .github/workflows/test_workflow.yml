@@ -6,7 +6,7 @@ name: test CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "main" ,"master"]
   # pull_request:
     # branches: [ "main" ]
 
@@ -32,5 +32,19 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
+          echo Add other actions to ubuntu_build,
+          echo test, and deploy your project.
+
+  windows_ build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one line script
+        run: echo Hello, windows
+      
+      - name: Run a multi line script
+        run: |
+          echo Add other actions to windows_ build
           echo test, and deploy your project.
