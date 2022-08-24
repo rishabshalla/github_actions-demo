@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to ubuntu_build,
           echo test, and deploy your project.
 
-  windows_ build:
+  windows_build:
     runs-on: windows-latest
 
     steps:
@@ -46,5 +46,5 @@ jobs:
       
       - name: Run a multi line script
         run: |
-          echo Add other actions to windows_ build
+          echo Add other actions to windows_build
           echo test, and deploy your project.
