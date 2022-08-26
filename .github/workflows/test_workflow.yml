@@ -2,8 +2,8 @@
 
 name: test CI
 
-# env:
-#   Message: Hello
+env:
+  Message: Hello
 
 # Controls when the workflow will run
 on:
